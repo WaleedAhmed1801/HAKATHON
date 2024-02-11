@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+}
+.sidebar h1{
+    font-size:1.5em;
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    padding-bottom: 5px;
+}
+.logo i{
+    padding: 10px;
+}
+.icon-item a{
+    padding-top: 40px;
+    text-align: left;
+    color: white;
+}
+.icon-item i{
+    padding: 20px;
+    font-size: 1.7rem;
+}
+.footer{
+    text-align: center;
+    padding-top: 90px;
+}
+.footer span{
+    color: rgb(23, 160, 160);
+}
+ /* side bar completed  */
+
+.bg{
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin-left: 20%; */
+}
+.bg-image{
+    background-image: url('./painting-mountain-lake-with-mountain-background_188544-9126.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+.heading-para{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.heading-para h1{
+    color: rgb(56, 56, 168);
+}
+
+.img-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+.child1{
+    background-image: url("./63123.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 35%;
+    height: 50vh;
+    border-radius: 5px;
+}
+.child2{
+    min-width: 60%;
+    padding: 20px
+}
+.child2 h1{
+    color: rgb(47, 47, 131);
+}
+ 
+.content1{
+    padding-top: 60px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+.content1 h1{
+    color: rgb(56, 56, 168);
+}
+.icon-card{
+    min-width: 50%; 
+     /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.card{
+    padding-top: 30px;
+    width: 210px;
+    height: 20vh;
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+.card b{
+    font-size: 1.9em;
+}
+.card span{
+    padding-left: 5px;
+    font-size: 1.9em;
+    color: rgb(50, 132, 104);
+    /* padding: 10px; */
+}
+
+.skill{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: aliceblue;
+    font-size: 1.1em;
+}
+.skill h1{
+    color: rgb(56, 56, 168);
+}
+.progress{
+    display: flex;
+}
+.pro{
+    width: 50%;
+    margin: 20px;
+}
+.line{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(84, 84, 185);
+}
+/* about section completed */
+
+.resume{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+.resume h1{
+    color: rgb(56, 56, 168);
+}
+.material{
+    display: flex;
+}
+.content{
+    min-width: 48%;
+    margin: 5px;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.resume span{
+    background-color: rgb(185, 211, 235);
+}
+
+/* resume section completed  */
+
+.portfolio{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.portfolio h1{
+    color: rgb(56, 56, 168);
+}
+.btn{
+    text-align: center;
+}
+button{
+    border: none;
+    width: 90px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+    color: rgb(239, 239, 168);
+}
+.btn{
+    padding: 30px;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.cards{
+    width: 320px;
+    height: 300px;
+    margin: 5px;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Portfolio section completed  */
+
+#service{
+    padding-left: 20px;
+}
+.card2{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+.card-child{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    background-color: rgb(248, 245, 245);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 50px;
+}
+/* service completed  */
+
+
+
+@media (max-width:859px) {
+    .img-item{
+        flex-direction: column;
+    }
+    .child1{
+        width: 100%;
+    }
+    .child2{
+        width: 100%;
+    }
+    .material{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        font-size: 1em;
+    }
+    .cards{
+        width: 100%;
+    }
+    .logo i{
+        padding: 5px;
+    }
+    .icon-item i{
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+    .footer{
+        padding-top: 200px;
+    }
+}
+
+@media (max-width:685px) {
+    .card span{
+        font-size: 1.1em;
+    }
+    .card b{
+        font-size: 1.1em;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    .card2{
+        flex-direction: column;
+    }
+    .card-child{
+        width: 100%;
+    }
+    .logo i{
+        display: none;
+    }
+}
+
+
+
+
+
+
