@@ -29,7 +29,9 @@
     padding: 10px;
 }
 .icon-item a{
-    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
     text-align: left;
     color: white;
 }
@@ -45,13 +47,12 @@
     color: rgb(23, 160, 160);
 }
  /* side bar completed  */
-
+ 
 .bg{
     width: 80%;
     position: absolute;
     right: 0;
     top: 0;
-    /* margin-left: 20%; */
 }
 .bg-image{
     background-image: url('./painting-mountain-lake-with-mountain-background_188544-9126.avif');
@@ -61,15 +62,14 @@
     width: 100%;
     height: 70vh;
 }
-.heading-para{
+#about{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.heading-para h1{
+#about h1{
     color: rgb(56, 56, 168);
 }
-
 .img-item{
     display: flex;
     flex-direction: row;
@@ -93,7 +93,6 @@
 .child2 h1{
     color: rgb(47, 47, 131);
 }
- 
 .content1{
     padding-top: 60px;
     padding-left: 20px;
@@ -103,17 +102,13 @@
     color: rgb(56, 56, 168);
 }
 .icon-card{
-    min-width: 50%; 
-     /* border: 1px solid black; */
+    width: 50%; 
     display: flex;
-    /* justify-content: space-around; */
 }
 .card{
     padding-top: 30px;
     width: 210px;
     height: 20vh;
-    /* border: 1px solid black; */
-    /* border-radius: 5px; */
     text-align: center;
     padding-bottom: 30px;
     margin: 10px;
@@ -127,12 +122,10 @@
     color: rgb(50, 132, 104);
     /* padding: 10px; */
 }
-
 .skill{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    background-color: aliceblue;
     font-size: 1.1em;
 }
 .skill h1{
@@ -152,13 +145,13 @@
 }
 /* about section completed */
 
-.resume{
+#resume{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
     font-size: 1.1em;
 }
-.resume h1{
+#resume h1{
     color: rgb(56, 56, 168);
 }
 .material{
@@ -172,18 +165,17 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.resume span{
+#resume span{
     background-color: rgb(185, 211, 235);
 }
-
 /* resume section completed  */
 
-.portfolio{
+#portfolio{
     padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.portfolio h1{
+#portfolio h1{
     color: rgb(56, 56, 168);
 }
 .btn{
@@ -209,6 +201,7 @@ button:hover{
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    padding-bottom: 70px;
 }
 .cards{
     width: 320px;
@@ -220,32 +213,128 @@ button:hover{
     height: 100%;
     border-radius: 5px;
 }
-
 /* Portfolio section completed  */
 
 #service{
     padding-left: 20px;
 }
+#service h1{
+    color: rgb(56, 56, 168);
+}
 .card2{
     display: flex;
     justify-content: space-around;
     /* border: 1px solid black; */
-    margin: 10px;
+    width: 100%;
 }
 .card-child{
     width: 300px;
-    height: 300px;
+    height: 250px;
     /* border: 1px solid black; */
     background-color: rgb(248, 245, 245);
     border-radius: 10px;
     margin: 10px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+.card-child i{
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.testimonail{
+    padding: 20px;
+}
+.testi-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
     padding-top: 50px;
+    align-items: center;
+}
+.testi{
+    width: 300px;
+    height: 340px;
+    /* border: 1px solid black;  */
+    border-radius: 10px;
+    background-color: rgb(248, 245, 245);
+    padding-top: 40px;
+    text-align: center;
+}
+.testi img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
 }
 /* service completed  */
-
-
+#contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+#contact h1{
+    color: rgb(56, 56, 168);
+}
+.frame-form{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-frame{
+    padding: 20px;
+    width: 40%;
+    height: 80vh;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+iframe{
+    width: 100%;
+    height: 45vh;
+    border-radius: 5px;
+}
+.xyz{
+    display: flex;
+    align-items: center;
+}
+.xyz i{
+    font-size: 2.3em;
+    color: rgb(36, 36, 81);
+}
+.p1{
+    padding-left: 40px;
+}
+.form{
+    width: 45%;
+    background-color:rgb(248, 248, 248);
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.form input{
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+}
+textarea{
+    border: none;
+    width: 90%;
+    height: 40vh;
+}
+.btn7{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(60, 173, 135);
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 5px;
+}
+/* contact section completed  */
 
 @media (max-width:859px) {
     .img-item{
@@ -299,6 +388,72 @@ button:hover{
     .logo i{
         display: none;
     }
+    .card2{
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2em;
+        padding-top: 5px;
+    }
+    .progress{
+        flex-direction: column;
+        width: 100%;
+    }
+    .pro{
+        width: 90%;
+    }
+    .frame-form{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-frame{
+        width: 100%;
+        margin: 10px;
+    }
+    .form{
+        width: 100%;
+    }
+    .btn7{
+        font-size: 0.9em;
+        height: 35px;
+        margin: 10px;
+    }
+    .testi-card{
+        flex-direction: column;
+    }
+    .testi{
+        width: 100%;
+        margin: 10px;
+    }
+
+
+
+
+
+}
+@media (max-width:600px) {
+    .sidebar h1{
+        display: none;
+    }
+    .icon-item span{
+        display: none;
+    }
+    .icon-item i{
+        font-size: 1.7em;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .footer{
+        font-size: 0.7em;
+    }
+    .card{
+        font-size: 0.8em;
+    }
+
+
 }
 
 
